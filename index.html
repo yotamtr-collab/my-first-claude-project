@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yotam Tron</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            background-color: #fdfcf8;
+            color: #2a2a2a;
+            line-height: 1.7;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem 1.5rem;
+        }
+
+        main {
+            max-width: 560px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .photo {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 2rem;
+            display: block;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: normal;
+            letter-spacing: -0.5px;
+            margin-bottom: 0.4rem;
+        }
+
+        .role {
+            font-size: 1.05rem;
+            color: #6b6b6b;
+            margin-bottom: 1.2rem;
+        }
+
+        .tagline {
+            font-style: italic;
+            font-size: 1.15rem;
+            color: #c9954a;
+            margin-bottom: 3rem;
+        }
+
+        .hello {
+            font-size: 1.05rem;
+            margin-bottom: 3rem;
+            color: #3a3a3a;
+        }
+
+        .hello p + p {
+            margin-top: 1rem;
+        }
+
+        .divider {
+            width: 40px;
+            height: 1px;
+            background-color: #d8d2c4;
+            margin: 0 auto 2.5rem;
+            border: none;
+        }
+
+        .contact-label {
+            font-size: 0.9rem;
+            color: #6b6b6b;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 0.8rem;
+        }
+
+        .phone {
+            display: inline-block;
+            font-size: 1.25rem;
+            color: #2a2a2a;
+            text-decoration: none;
+            border-bottom: 1px solid #c9954a;
+            padding-bottom: 2px;
+            transition: color 0.2s ease;
+        }
+
+        .phone:hover {
+            color: #c9954a;
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .photo {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <img src="photo.jpg" alt="Yotam Tron" class="photo">
+        <h1>Yotam Tron</h1>
+        <p class="role">OD Partner at Wix</p>
+        <p class="tagline">Everything is an opportunity.</p>
+
+        <hr class="divider">
+
+        <div class="hello">
+            <p>Hi, I'm Yotam.</p>
+            <p>This little corner of the internet is for the people I love most &mdash; my family.</p>
+            <p>If you're reading this, know that I'm thinking of you, and that being part of this family is the greatest opportunity of all.</p>
+        </div>
+
+        <hr class="divider">
+
+        <p class="contact-label">Say hi</p>
+        <a href="tel:+972526033394" class="phone">+972 52 603 3394</a>
+    </main>
+</body>
+</html>
