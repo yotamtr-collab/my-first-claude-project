@@ -18,7 +18,6 @@ A summary of everything we did in my first Claude Code session.
 ## 4. Almost made a serious mistake
 - Asked Claude to `git init` and push `.claude` to GitHub.
 - Claude refused — that folder contains credentials, full conversation transcripts, and MCP auth state. **Anything pushed to GitHub should be considered permanently leaked**, even if the repo is later deleted.
-- Lesson: never put a config/state directory under version control without first auditing every file.
 
 ## 5. Created the real project
 - New folder: `C:\Users\yotamtr\Documents\my-first-claude-project\`
@@ -29,7 +28,6 @@ A summary of everything we did in my first Claude Code session.
 - Confused GitHub Desktop (GUI app) with GitHub CLI (`gh`) — they're different tools.
 - Installed `gh` via `winget install --id GitHub.cli`, but PATH didn't refresh in the running terminal.
 - `gh auth login` flow didn't complete cleanly — no auth config file on disk despite multiple attempts.
-- Lesson: when a CLI install adds something to PATH, fully close the terminal window (not just the tab) so the new PATH is picked up.
 
 ## 7. Switched to plain `git`
 - Created the repo manually at https://github.com/new (private, empty — no README/gitignore).
